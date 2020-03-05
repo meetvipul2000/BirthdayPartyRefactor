@@ -1,4 +1,4 @@
-package scrap.heap.refactor;
+package oldcode-scrap.heap.refactor;
 
 public class App {
     public String getGreeting() {
