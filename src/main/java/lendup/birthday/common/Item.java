@@ -1,8 +1,8 @@
-package clendup.birthday.common;
+package lendup.birthday.common;
 
-import com.lendup.birthday.enums.ColorType;
-import com.lendup.birthday.logger.LOGGER;
-import com.lendup.birthday.logger.LogLevel;
+import lendup.birthday.enums.ColorType;
+import lendup.birthday.logger.LOGGER;
+import lendup.birthday.logger.LogLevel;
 
 public abstract class Item {
 	

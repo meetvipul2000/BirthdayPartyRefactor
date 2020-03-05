@@ -1,10 +1,10 @@
 package lendup.birthday.common;
 
-import com.lendup.birthday.enums.FlavourType;
-import com.lendup.birthday.enums.OrderSizeType;
-import com.lendup.birthday.enums.ShapeType;
-import com.lendup.birthday.logger.LOGGER;
-import com.lendup.birthday.logger.LogLevel;
+import lendup.birthday.enums.FlavourType;
+import lendup.birthday.enums.OrderSizeType;
+import lendup.birthday.enums.ShapeType;
+import lendup.birthday.logger.LOGGER;
+import lendup.birthday.logger.LogLevel;
 
 public class Cake extends Item {
 	

@@ -1,8 +1,8 @@
 package lendup.birthday.common;
 
-import com.lendup.birthday.enums.MaterialType;
-import com.lendup.birthday.logger.LOGGER;
-import com.lendup.birthday.logger.LogLevel;
+import lendup.birthday.enums.MaterialType;
+import lendup.birthday.logger.LOGGER;
+import lendup.birthday.logger.LogLevel;
 
 /**
  *  This class contains property of ballon like color and material.

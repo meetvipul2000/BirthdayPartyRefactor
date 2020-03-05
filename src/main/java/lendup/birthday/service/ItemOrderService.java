@@ -1,8 +1,11 @@
 package lendup.birthday.service;
 
-import com.lendup.birthday.common.Baloon;
-import com.lendup.birthday.common.Cake;
+import lendup.birthday.common.Baloon;
+import lendup.birthday.common.Cake;
 
+/*
+In API interface  to  abstract cake and ballon order service details
+ */
 public interface ItemOrderService {
 	
 	public void orderCake(Cake cakeData) throws Exception;

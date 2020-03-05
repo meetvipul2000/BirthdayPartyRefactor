@@ -1,12 +1,12 @@
 package lendup.birthday.app;
 
-import com.lendup.birthday.common.Baloon;
-import com.lendup.birthday.common.Baloon.BaloonBuilder;
-import com.lendup.birthday.common.Cake;
-import com.lendup.birthday.factory.OrderServiceFactory;
-import com.lendup.birthday.logger.LOGGER;
-import com.lendup.birthday.logger.LogLevel;
-import com.lendup.birthday.service.ItemOrderService;
+import lendup.birthday.common.Baloon;
+import lendup.birthday.common.Baloon.BaloonBuilder;
+import lendup.birthday.common.Cake;
+import lendup.birthday.factory.OrderServiceFactory;
+import lendup.birthday.logger.LOGGER;
+import lendup.birthday.logger.LogLevel;
+import lendup.birthday.service.ItemOrderService;
 
 public class App{	
 

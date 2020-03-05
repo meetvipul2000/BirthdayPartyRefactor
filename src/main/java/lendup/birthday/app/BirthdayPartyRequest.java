@@ -1,7 +1,7 @@
-package com.lendup.birthday.app;
+package lendup.birthday.app;
 
-import com.lendup.birthday.common.Baloon;
-import com.lendup.birthday.common.Cake;
+import lendup.birthday.common.Baloon;
+import lendup.birthday.common.Cake;
 
 public class BirthdayPartyRequest {
 	
