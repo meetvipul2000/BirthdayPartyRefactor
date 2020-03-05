@@ -2,6 +2,8 @@ package lendup.birthday.service;
 
 import lendup.birthday.common.Baloon;
 import lendup.birthday.common.Cake;
+import lendup.birthday.enums.FlavourType;
+import lendup.birthday.enums.OrderSizeType;
 import lendup.birthday.logger.LOGGER;
 import lendup.birthday.logger.LogLevel;
 
@@ -15,6 +17,15 @@ public class CakeServiceImpl implements ItemOrderService{
 			throw new Exception("No cake data provided");
 		}		
 		try{
+			//This is dummy failiging scenario where cake can not be processed.
+			if(FlavourType.CHOCOLATE == cakeData.getFlavour() && 
+					OrderSizeType.SMALL == cakeData.getSize()) {
+				
+				LOGGER.log(LogLevel.INFO, "Chocolate flavour cake can not be small size");
+				
+				throw new Exception("Chocolate flavour cake can not be small size");
+				
+			}
 			
 			//Order cake here
 			

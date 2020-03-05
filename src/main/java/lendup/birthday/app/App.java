@@ -3,6 +3,7 @@ package lendup.birthday.app;
 import lendup.birthday.common.Baloon;
 import lendup.birthday.common.Baloon.BaloonBuilder;
 import lendup.birthday.common.Cake;
+import lendup.birthday.enums.Response;
 import lendup.birthday.factory.OrderServiceFactory;
 import lendup.birthday.logger.LOGGER;
 import lendup.birthday.logger.LogLevel;
@@ -10,7 +11,10 @@ import lendup.birthday.service.ItemOrderService;
 
 public class App{	
 
-	public void order(BirthdayPartyRequest request) {
+	public Response order(BirthdayPartyRequest request) {
+		
+		// Using enum at this moment, can be concrete class with additaion info
+		Response  response = Response.SUCCESS; 
 		
 		//if request object is null, return failure response
 		if(null==request){
@@ -33,9 +37,14 @@ public class App{
 			}
 		}catch(Exception e){
 			//Handle rollback for sucessfull previous any order 
+			response = Response.FAILURE;
 			LOGGER.log(LogLevel.ERROR, "Exception while order items");
 		}	
 		LOGGER.log(LogLevel.INFO,"Sucessfully Order placed");
+		
+		return response ;
 	}
+	
+	
 
 }

@@ -4,7 +4,7 @@ public enum FlavourType {
 	
 
 	STRABERY("straberry"),
-	CHOCOLATE("chcolate"),
+	CHOCOLATE("chocolate"),
 	BERRY("berry"),
 	UNKNOWN("unknown"),
 	DEFAULT("default");
